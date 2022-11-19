@@ -17,6 +17,6 @@ sig = sign(cookie)
 print("{0},{1}".format(cookie.decode('utf-8'), sig))
 
 print(verify(b'1xpacman', sig))
-# False
+# it will retrun False
 print(verify(b'0xpacman', sig))
-# True
+# returns True
